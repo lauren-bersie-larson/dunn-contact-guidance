@@ -22,7 +22,7 @@ fiber_B = 2.5;
 fiber_area = pi*((100e-9)^2); 
 
 % Define parameters for the protrusion
-direction = 2; % Defines the axis the cylinder will extend parallel to 
+direction = 1; % Defines the axis the cylinder will extend parallel to 
 L = 0.5; % Cylinder length in computational units
 R = 0.125; % Cylinder radius in computational units
 
@@ -59,7 +59,7 @@ end
 addpath('Delaunay Networks'); % Directory where networks are saved
 
 fibseg_nodes1 = [];
-network_list = [1,22,43,64,85,106,127,148,169,190,211,232,253,274,295,316,337,358,379,400,421,442,463,484]; %[1:504]; 
+network_list = [1:504]; 
 
 %% Loop through networks to be solved
  for i = 1:length(network_list)
